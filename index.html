@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Citrus &amp; Sins</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="./assets/index-D1Cy28sR.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BJWRx4w4.css">
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <div id="title" class="screen">
+      <div class="title-inner">
+        <div class="logo"><span class="citrus">CITRUS &amp;</span><span class="sin">SINS</span></div>
+        <div class="tag">Driftwood</div>
+        <div id="loading" class="loading">Loading engine…</div>
+        <div id="title-buttons" class="buttons hidden">
+          <button id="btn-play" class="primary">Free Roam (Offline)</button>
+          <button id="btn-online" disabled title="Arrives in Milestone 4">Online: Milestone 4</button>
+          <button id="btn-settings">Settings</button>
+        </div>
+        <div class="foot">Early build · Driftwood, live Orlando time + weather</div>
+      </div>
+    </div>
+
+    <div id="pause" class="screen hidden">
+      <div class="panel">
+        <h2>Paused</h2>
+        <button id="btn-resume" class="primary">Resume</button>
+        <label>Graphics
+          <select id="opt-quality">
+            <option value="low">Low (Chromebook)</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+            <option value="ultra">Ultra</option>
+          </select>
+        </label>
+        <div class="controls">Time and weather always match real Orlando right now (updates every 10 minutes).</div>
+        <label>Mouse sensitivity <input id="opt-sens" type="range" min="0.3" max="2.5" step="0.1" /></label>
+        <label class="check"><input id="opt-invert" type="checkbox" /> Invert look</label>
+        <label class="check"><input id="opt-fps" type="checkbox" /> Show FPS</label>
+        <div class="controls">
+          <b>Controls</b>
+          <div>W/A/S/D move · Mouse look · Shift sprint · Space jump · Ctrl dive (in water)</div>
+          <div>Mouse or trackpad scroll turns the camera · C crouch · V camera distance · middle mouse look behind · G grenade · Esc / P pause</div>
+          <div>Coming with later milestones: F enter/exit car · RMB aim · LMB shoot · R reload · Tab weapon wheel · M map · T chat · Q radio · E horn · H headlights</div>
+          <div>Gamepad: A jump · B sprint · Start pause · Back camera · R3 look behind</div>
+        </div>
+        <button id="btn-title">Back to title</button>
+      </div>
+    </div>
+
+    <div id="hud" class="hidden">
+      <div class="clock"><div id="hud-sub">Driftwood · LIVE</div></div>
+      <div id="hud-district" class="district"></div>
+      <div id="hud-fps" class="fps"></div>
+      <div id="hud-hint" class="hint">Click to look around · WASD move · Shift sprint · Space jump · V camera · Esc menu</div>
+      <div id="hud-click" class="clickcap hidden">Click to resume</div>
+    </div>
+
+  </body>
+</html>
